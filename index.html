@@ -20,15 +20,116 @@
     <div class="base__container">
         <header class="hdr">
             <nav class="hdr__nav">
-                <a href=""><img src="./assets/icons/logo.svg" alt=""></a>
+                <a href="" class="hrr__nav-logo"><img src="./assets/icons/logo.svg" alt=""></a>
                 <ul class="hdr__nav-list">
-                    <li><a href="">Выбрать поверхность</a></li>
-                    <li><a href="">Вдохновение для дизайна</a></li>
-                    <li><a href="">Сотрудничество</a></li>
-                    <li><a href="">О компании</a></li>
-                    <li><a href="">Шоурумы</a></li>
-                    <li><a href="">Документы</a></li>
-                    <li><a href="">Поддержка</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Выбрать поверхность
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Выбрать поверхность
+                                </div>
+
+                                <div class="dropdown__item">
+                                    Каталог цветов
+                                </div>
+
+                                <div class="dropdown__item">
+                                    <span>Каталог изделий</span>
+                                </div>
+
+                                <div class="dropdown__item">
+                                    Коллекции
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Вдохновение для дизайна
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Вдохновение для дизайна
+                                </div>
+                            </div>
+                        </div>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Сотрудничество
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Сотрудничество
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                О компании
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    О компании
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Шоурумы
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Шоурумы
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Документы
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Документы
+                                </div>
+                            </div>
+                        </div>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropdown__toggle">
+                                Поддержка
+                                <span class="dropdown__chevron">▾</span>
+                            </button>
+
+                            <div class="dropdown__menu">
+                                <div class="dropdown__item dropdown__item--title">
+                                    Поддержка
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <div class="hdr__nav-contacts">
                     <a href="" type="tel">8( 495) 999 99 99 </a>
@@ -41,7 +142,7 @@
             <h3 class="hdr__h3">
                 Совершенство формы и текстуры. Создан, чтобы подчеркнуть характер пространства и утонченность деталей.
             </h3>
-            <a class="hdr__btn">В каталог</a>
+            <a class="hdr__btn" href="#">В каталог</a>
         </header>
         <main>
             <section class="welcome section-gap">
@@ -194,7 +295,7 @@
             </section>
 
         </main>
-        <footer class="footer" class="section-gap">
+        <footer class="footer section-gap">
             <div class="footer__wrap">
                 <div class="footer__links">
                     <div class="footer__links-wrap">
@@ -230,14 +331,22 @@
                     </div>
                 </div>
                 <div class="footer__contacts">
-                    <div сlass="footer__contacts-wrap">
-                        <a href="">Заказать образец</a>
-                        <a href="" type="tel">8( 495) 999 99 99 </a>
+                    <div class="footer__contacts-wrap">
+                        <a class="footer__contacts-a footer__contacts-order" href="">Заказать образец</a>
+                        <a class="footer__contacts-a footer__contacts-tel" type="tel">8( 495) 999 99 99 </a>
                     </div>
                     <img src="/assets/img/footer__logo.png" alt="">
                 </div>
             </div>
             <div class="footer__policy">
+                <div class="footer__policy-wrap">
+                    <p>ⓒ Права защищены | 2025</p>
+                </div>
+                <div class="footer__policy-wrap">
+                    <p>Политика Конфиденциальности</p>
+                    <p>Политика обработки данных</p>
+                    <p>Разработка</p>
+                </div>
             </div>
         </footer>
     </div>
