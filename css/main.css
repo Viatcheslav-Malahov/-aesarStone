@@ -553,6 +553,13 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     color: rgba(30, 30, 30, 0.8);
 }
 
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+}
+
 .footer__contacts-wrap {
     display: flex;
     gap: 20px;
@@ -572,8 +579,11 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
 }
 
 .footer__contacts-tel {
-    background-color: rgba(236, 234, 229, 1) ;
+    background-color: rgba(236, 234, 229, 1);
+}
 
+.footer__contacts-wrap-img-mobile {
+    display: none;
 }
 
 .footer__policy {
@@ -625,6 +635,32 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     .hdr__h3 {
         font-size: 24px;
         width: auto;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer__contacts {
+        height: 100%;
+    }
+
+    .footer__contacts-wrap {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__contacts-a {
+        width: 165px;
+    }
+
+    .footer__contacts-wrap-img-mobile {
+        display: block;
+    }
+
+    .footer__contacts-wrap-img-desc {
+        display: none;
     }
 }
 
