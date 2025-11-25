@@ -385,12 +385,63 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     text-decoration: none;
 }
 
+.calculation {
+    display: flex;
+    background-color: rgba(236, 234, 229, 1);
+    margin: 0 -40px;
+    margin-top: 110px;
+    padding: 0 40px;
+}
+
+.calculation>div {
+    width: 100%;
+}
+
+.calculation__leftWrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.calculation__leftWrap>h3 {
+    font-size: 24px;
+    font-family: var(--font-roboto);
+}
+
+.calculation__img {
+    background-image: url('/assets/img/catalog/calculation.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.calculation__rigthWrap {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.calculation__rigthWrap>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 44px;
+}
+
+.calculation__rigthWrap-black {
+    background-color: var(--color-main-dark);
+    color: var(--color-main-white);
+}
+
 .footer__wrap {
     display: flex;
     justify-content: space-between;
     padding-top: 110px;
 }
-
 
 .footer__links {
     display: flex;
@@ -555,7 +606,87 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     .cards {
         grid-template-columns: 1fr 1fr;
     }
+
+    .cards__card {
+        height: 450px;
+    }
+
+    .article__wrapper-info {
+        width: 100%;
+    }
+
+    .article__wrapper-info>h2 {
+        font-size: 32px;
+    }
+
+    .article__wrapper-bottom>p {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .article__wrapper-bottom>a {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .calculation_br {
+        display: none;
+    }
 }
+
+@media (max-width: 900px) {
+
+    .cards__card {
+        height: 350px;
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article__wrapper-info {
+        width: 100%;
+    }
+
+    .article__wrapper-info>h2 {
+        font-size: 32px;
+    }
+
+    .article__wrapper-bottom>p {
+        width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .article__wrapper-bottom>a {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+        font-size: 14px;
+    }
+
+    .calculation {
+        flex-direction: column;
+        gap: 25px;
+        padding: 70px 10px;
+        margin: 0 -10px;
+        margin-top: 110px;
+    }
+
+
+    .calculation__img {
+        height: 270px;
+    }
+
+    .calculation__rigthWrap {
+        padding: 0;
+    }
+}
+
+
 
 @media (max-width: 650px) {
 
@@ -586,6 +717,37 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
 
     .footer__policy-wrap-right {
         justify-content: flex-end;
+    }
+
+    .calculation {
+        margin: 0 -5px;
+        padding: 70px 5px;
+        margin-top: 110px;
+    }
+
+    .cards__card {
+        height: 240px;
+        background-position: center;
+        background-size: auto 100%;   
+        background-repeat: no-repeat;    
+    }
+    .cards__card-material {
+        width: 65px;
+        height: 55px;
+    }
+    .cards__card-link {
+        padding: 3px 10px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+
+    .cards__card-link >p{
+        font-size: 14px;
+    }
+
+    .cards__card-link > img {
+        height: 20px;
     }
 }
 
