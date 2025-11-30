@@ -379,7 +379,7 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     display: none;
 }
 
-.colorInsideLink{
+.colorInsideLink {
     height: 55px;
     width: 444px;
     display: flex;
@@ -388,14 +388,79 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
     margin-top: 50px;
     border: 1px solid var(--color-main-dark);
 }
-.colorInside{
+
+.colorInside {
     margin-top: 110px;
 }
 
-.colorInsideHdr{
+.colorInsideHdr {
     width: 653px;
     font-family: var(--font-roboto);
 }
+
+.colorInsideSlider {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.colorInsideSliderItem {
+    background-position: center;
+    background-size: auto 100%;
+    height: 560px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.colorInsideSliderItem1 {
+    background-image: url('../assets/img/catalogItem/colorInside/1.png');
+}
+
+.colorInsideSliderItem2 {
+    background-image: url('../assets/img/catalogItem/colorInside/2.png');
+}
+
+.colorInsideSliderItem3 {
+    background-image: url('../assets/img/catalogItem/colorInside/3.png');
+}
+
+.colorInsideSliderItem4 {
+    background-image: url('../assets/img/catalogItem/colorInside/4.png');
+}
+
+.colorInsideSliderItemInfo {
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    color: var(--color-main-white);
+    padding: 15px;
+    display: flex;
+}
+
+.colorInsideSliderItemInfoWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.colorInsideSliderItemInfoWrapGrey{
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.colorInsideSliderItemInfoWrapRoboto{
+    font-size: 14px;
+    font-family: var(--font-roboto);
+}
+
+.colorInsideSliderItemInfoWrapLink{
+    display: block;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
 .article {
     margin-top: 125px;
     display: flex;
@@ -573,8 +638,6 @@ nav .dropdown__item:not(.dropdown__item--accent):hover {
 .footer__policy p {
     font-size: 12px;
 }
-
-@media (max-width: 1920px) {}
 
 @media (max-width: 1650px) {
     .base__container {
